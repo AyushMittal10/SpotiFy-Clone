@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Spotify</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of Ayush Mittal Playlist - Favourites</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <!-- src zrurt nhi becoz JS se le rhe hai-->
+                    <img alt="1">
+                    <!-- class songName islea jisse JS se iterate krk krlu-->
+                    <span class="songName">Aankho se Batana (Heartbreak Version)</span>
+                    <!-- songItemPay is class in span RHS-->
+                    <!-- id in i RHS ki konsa gaana bj rha ke liye-->
+                    <span class="songlistplay"><span class="timestamp">03:43 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="2">
+                    <span class="songName">Aankh Marey - Simmba</span>
+                    <span class="songlistplay"><span class="timestamp">03:32 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="3">
+                    <span class="songName">Oh Ho Ho Ho - Sukhbir Randhawa</span>
+                    <span class="songlistplay"><span class="timestamp">04:04 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="4">
+                    <span class="songName">Prem ki naiyya - Pritam</span>
+                    <span class="songlistplay"><span class="timestamp">04:11 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="5">
+                    <span class="songName">Pehli Dafa - Atif Aslam</span>
+                    <span class="songlistplay"><span class="timestamp">04:58 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="6">
+                    <span class="songName">Amplifier - Imran Khan</span>
+                    <span class="songlistplay"><span class="timestamp">03:51 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="7">
+                    <span class="songName">Let me love you - Justin Beiber</span>
+                    <span class="songlistplay"><span class="timestamp">03:16 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="8">
+                    <span class="songName">Arcade - Duncan Laurence</span>
+                    <span class="songlistplay"><span class="timestamp">03:05 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="9">
+                    <span class="songName">Industry Baby - Lil Nas X </span>
+                    <span class="songlistplay"><span class="timestamp">03:32 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="10">
+                    <span class="songName">Fairytale - Alexander Rybak</span>
+                    <span class="songlistplay"><span class="timestamp">03:00 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <!--  intial value 0 set becoz music 0 se start-->
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <!-- mastersongName niche vala naam usko by default 1st song ka daalo-->
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Aankho se Batana (Heartbreak Version)</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
